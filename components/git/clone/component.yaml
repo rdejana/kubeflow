@@ -8,7 +8,7 @@ inputs:
 - {name: Repo URI, type: String}
 - {name: Branch, type: String, default: master}
 outputs:
-- {name: data_dir}
+- {name: Repo dir, type: Directory}
 implementation:
   container:
     image: alpine/git
@@ -18,4 +18,4 @@ implementation:
     - --branch
     - inputValue: Branch
     - inputValue: Repo URI
-    - outputPath: data_dir
+    - outputPath: Repo dir
