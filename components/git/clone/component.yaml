@@ -8,7 +8,7 @@ inputs:
 - {name: Repo URI, type: String}
 - {name: Branch, type: String, default: master}
 outputs:
-- - {name: Repo dir, type: Dataset, description: 'git clone location'}
+- - {name: Repo dir, description: 'git clone location'}
 implementation:
   container:
     image: alpine/git
