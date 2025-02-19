@@ -13,7 +13,6 @@ implementation:
   container:
     image: alpine/git
     command:
-    - git
     - clone
     - --depth=1
     - --branch
